@@ -1,0 +1,38 @@
+<!--<ion-header-bar class="bar-assertive">
+	<ion-nav-back-button></ion-nav-back-button>
+	<h2 class="title">Listing Detail</h2>
+</ion-header-bar> -->
+
+<!-- Using the global header now --> 
+<ion-vew title="Listing Detail">
+	<ion-content class="has-subheader">
+		<ion-list class="list-inset">
+			<ion-item class="item item-text-wrap" ng-repeat="item in listings | filter: { id: whichListing } : true">
+				<img ng-src="{{ item.mobileimage }}" alt="Image"/>
+		        <h2>{{ item.street }} {{ item.suburb }}</h2>
+		        <h3>{{ item.information }}</h3>
+		        <h3>Bed: {{ item.beds }} | Bath: {{ item.bath }} | Parking: {{ item.parking }}</h3>
+		        <h4>RPP Market Apraisal: ${{ item.marketvalue }}</h4>
+		       	<p>&nbsp;</p>
+		        <form>
+		        	<h2>Enter Sale Details:</h2>
+		        	<div class="list">
+		        	<label class="item item-input">
+					  	<span class="input-label">Sales Price</span>
+					  	<input type="text" ng-model="item.price">
+					</label>
+					<label class="item item-input">
+					  	<span class="input-label">Sale Date</span>
+					  	<input type="text" ng-model="item.saledate">
+					</label>
+					</div>
+					<button class="button button-full button-calm" ng-click="updateListing({{ item.id }})">
+				    	Submit
+				  	</button>
+				</form>
+				<p>&nbsp;</p>
+		        <p>{{ item.description }}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-vew>

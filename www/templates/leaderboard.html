@@ -1,0 +1,31 @@
+<!-- **Header Bar starts here --> 
+  <ion-header-bar class="bar-assertive">
+    <h2 class="title">Leaderboard</h2>
+  </ion-header-bar>
+  <!-- **Header bar ends here -->
+
+  <!-- **Subheader Starts here --> 
+  <div class="bar bar-subheader item-input-inset bar-light">
+    <label class="item-input-wrapper">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" ng-model="query" placeholder="search" />
+    </label>
+  </div>
+  <!-- **Subheader ends here -->
+
+  <!-- **Content section starts here, repeat through list of properties --> 
+  <ion-content class="has-subheader">
+  <ion-refresher pulling-text="Pull to Refresh" on-refresh="doRefresh()"></ion-refresher>
+    <ion-list class="list list-inset">
+      <ion-item class="item-thumbnail-left item-text-wrap icon-right" 
+      ng-repeat="item in leaders | filter: query">
+        <img ng-src="{{ item.PersonImage }}" alt="Image" />
+        
+        <h2>{{ item.name.first }} {{ item.name.last }}</h2>
+        <h3>${{ item.TotalSales }}</h3>
+        <p>Some stuff</p>
+        <!-- Reorder button functionality that is repeated in each list item -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <!-- **Content section ends here --> 

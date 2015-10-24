@@ -1,0 +1,24 @@
+[
+  {
+    "isActive": true,
+    "AgentId": "5619759add676599a475fa8c",
+    "PersonImage": "http://placehold.it/32x32",
+    "Position": 1,
+    "TotalSales": 1052345,
+    "name": {
+      "first": "Michael",
+      "last": "Alexander"
+    }
+  },
+    {
+    "isActive": true,
+    "AgentId": "5619759add676599a475fa8c",
+    "PersonImage": "http://placehold.it/32x32",
+    "Position": 2,
+    "TotalSales": 1052345,
+    "name": {
+      "first": "Michael",
+      "last": "Alexander"
+    }
+  }
+]

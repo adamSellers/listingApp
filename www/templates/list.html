@@ -1,0 +1,39 @@
+<!-- Begin --> 
+  <ion-view title="Available Listings">
+
+  <!-- **Subheader Starts here --> 
+  <div class="bar bar-subheader item-input-inset bar-light">
+    <label class="item-input-wrapper">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" ng-model="query" placeholder="search" />
+    </label>
+  </div>
+  <!-- **Subheader ends here -->
+
+  <!-- **Content section starts here, repeat through list of properties --> 
+  <ion-content class="has-subheader">
+  <ion-refresher pulling-text="Pull to Refresh" on-refresh="doRefresh()"></ion-refresher>
+    <ion-list> <!-- took these out of here show-reorder="data.showReorder" show-delete="data.showEdit" -->
+      <ion-item class="item-thumbnail-left item-text-wrap item-icon-right" 
+      ng-class="{'star' : item.star}"
+      ng-repeat="item in listings | filter: query" href="#/tab/list/{{ item.id }}">
+        <img ng-src="{{ item.mobileimage }}" alt="Image" />
+        <h2>{{ item.street }}</h2>
+        <h3>Elders Real Estate</h3>
+        <h3>Bed: {{ item.beds }} | Bath: {{ item.bath }} | Parking: {{ item.parking }}</h3>
+        <p>{{ item.description | limitTo: 50 }}{{ item.description.length > 50 ? '&hellip;' : ''}}</p>
+        <!-- Reorder button functionality that is repeated in each list item -->
+        <button class="button button-clear icon ion-star button-assertive"
+         ng-click="toggleStar(item)" ng-show="item.star"></button>
+         <ion-option-button class="button-dark" ng-click="toggleStar(item)">
+          <i class="icon ion-star"></i>
+         </ion-option-button>
+        <!-- don't need these anymore either
+        <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)">
+        <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)"></ion-delete-button>
+        </ion-reorder-button> -->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <!-- **Content section ends here --> 
+</ion-view> 
