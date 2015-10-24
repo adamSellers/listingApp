@@ -19,10 +19,10 @@
     <ion-list class="list list-inset">
       <ion-item class="item-thumbnail-left item-text-wrap icon-right" 
       ng-repeat="item in leaders | filter: query">
-        <img ng-src="{{ item.PersonImage }}" alt="Image" />
+        <img ng-src="{{ item.picture }}" alt="Image" />
         
         <h2>{{ item.name.first }} {{ item.name.last }}</h2>
-        <h3>${{ item.TotalSales }}</h3>
+        <h3>{{ item.balance }}</h3>
         <p>Some stuff</p>
         <!-- Reorder button functionality that is repeated in each list item -->
       </ion-item>

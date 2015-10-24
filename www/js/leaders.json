@@ -1,24 +1,227 @@
 [
   {
-    "isActive": true,
-    "AgentId": "5619759add676599a475fa8c",
-    "PersonImage": "http://placehold.it/32x32",
-    "Position": 1,
-    "TotalSales": 1052345,
+    "_id": "562b4a348f7364b6a83598c3",
+    "index": 0,
+    "balance": "$2,040,460",
+    "picture": "img/agents/st13453.jpg",
+    "age": 34,
     "name": {
-      "first": "Michael",
-      "last": "Alexander"
-    }
+      "first": "Mollie",
+      "last": "Small"
+    },
+    "company": "Elders Real Estate",
+    "email": "mollie.small@elders.com.au",
+    "phone": "+61 498 547 833",
+    "joined": "Sunday, April 5, 2015 11:15 PM"
   },
-    {
-    "isActive": true,
-    "AgentId": "5619759add676599a475fa8c",
-    "PersonImage": "http://placehold.it/32x32",
-    "Position": 2,
-    "TotalSales": 1052345,
+  {
+    "_id": "562b4a3413bafa154dbebbaf",
+    "index": 1,
+    "balance": "$3,323,685",
+    "picture": "img/agents/st14718.jpg",
+    "age": 28,
     "name": {
-      "first": "Michael",
-      "last": "Alexander"
-    }
+      "first": "Carney",
+      "last": "Pratt"
+    },
+    "company": "Elders Real Estate",
+    "email": "carney.pratt@elders.com.au",
+    "phone": "+61 489 558 638",
+    "joined": "Friday, October 10, 2014 1:13 PM"
+  },
+  {
+    "_id": "562b4a34471f9f99568d704d",
+    "index": 2,
+    "balance": "$2,288,716",
+    "picture": "img/agents/st15111.jpg",
+    "age": 28,
+    "name": {
+      "first": "Cheri",
+      "last": "Rowland"
+    },
+    "company": "Elders Real Estate",
+    "email": "cheri.rowland@elders.com.au",
+    "phone": "+61 484 845 524",
+    "joined": "Friday, August 28, 2015 8:32 PM"
+  },
+  {
+    "_id": "562b4a344557ea98265e37bf",
+    "index": 3,
+    "balance": "$2,936,039",
+    "picture": "img/agents/st15257.jpg",
+    "age": 23,
+    "name": {
+      "first": "Sheila",
+      "last": "Waller"
+    },
+    "company": "Elders Real Estate",
+    "email": "sheila.waller@elders.com.au",
+    "phone": "+61 499 945 539",
+    "joined": "Saturday, March 28, 2015 4:54 AM"
+  },
+  {
+    "_id": "562b4a34265b6493f344da6d",
+    "index": 4,
+    "balance": "$3,901,035",
+    "picture": "img/agents/st15531.jpg",
+    "age": 28,
+    "name": {
+      "first": "Violet",
+      "last": "Roth"
+    },
+    "company": "Elders Real Estate",
+    "email": "violet.roth@elders.com.au",
+    "phone": "+61 482 241 639",
+    "joined": "Monday, February 3, 2014 11:49 PM"
+  },
+  {
+    "_id": "562b4a34cea1b6303ce57924",
+    "index": 5,
+    "balance": "$2,326,537",
+    "picture": "img/agents/st15575.jpg",
+    "age": 20,
+    "name": {
+      "first": "Blankenship",
+      "last": "Buchanan"
+    },
+    "company": "Elders Real Estate",
+    "email": "blankenship.buchanan@elders.com.au",
+    "phone": "+61 499 444 338",
+    "joined": "Wednesday, June 10, 2015 9:31 AM"
+  },
+  {
+    "_id": "562b4a34760cd59ce6555724",
+    "index": 6,
+    "balance": "$1,494,075",
+    "picture": "img/agents/st15894.jpg",
+    "age": 30,
+    "name": {
+      "first": "Josefa",
+      "last": "Marks"
+    },
+    "company": "Elders Real Estate",
+    "email": "josefa.marks@elders.com.au",
+    "phone": "+61 496 654 727",
+    "joined": "Friday, December 19, 2014 3:17 AM"
+  },
+  {
+    "_id": "562b4a3456f3b264a2c61bb2",
+    "index": 7,
+    "balance": "$1,245,794",
+    "picture": "img/agents/st16640.jpg",
+    "age": 33,
+    "name": {
+      "first": "Antoinette",
+      "last": "Raymond"
+    },
+    "company": "Elders Real Estate",
+    "email": "antoinette.raymond@elders.com.au",
+    "phone": "+61 493 648 132",
+    "joined": "Friday, February 14, 2014 9:11 AM"
+  },
+  {
+    "_id": "562b4a349ca0edd76182436b",
+    "index": 8,
+    "balance": "$3,374,650",
+    "picture": "img/agents/st16752.jpg",
+    "age": 38,
+    "name": {
+      "first": "Beryl",
+      "last": "Lott"
+    },
+    "company": "Elders Real Estate",
+    "email": "beryl.lott@elders.com.au",
+    "phone": "+61 480 655 537",
+    "joined": "Tuesday, May 13, 2014 7:23 AM"
+  },
+  {
+    "_id": "562b4a34cf7f6046ba5b8de6",
+    "index": 9,
+    "balance": "$1,359,745",
+    "picture": "img/agents/st16955.jpg",
+    "age": 30,
+    "name": {
+      "first": "Maryellen",
+      "last": "Mckee"
+    },
+    "company": "Elders Real Estate",
+    "email": "maryellen.mckee@elders.com.au",
+    "phone": "+61 496 947 529",
+    "joined": "Sunday, January 18, 2015 6:38 PM"
+  },
+  {
+    "_id": "562b4a34a5b072c0e86a90d1",
+    "index": 10,
+    "balance": "$1,889,918",
+    "picture": "img/agents/st17141.jpg",
+    "age": 40,
+    "name": {
+      "first": "Benita",
+      "last": "Chaney"
+    },
+    "company": "Elders Real Estate",
+    "email": "benita.chaney@elders.com.au",
+    "phone": "+61 496 159 521",
+    "joined": "Friday, May 16, 2014 8:16 AM"
+  },
+  {
+    "_id": "562b4a34c8ba3ebc2b46a322",
+    "index": 11,
+    "balance": "$3,625,099",
+    "picture": "img/agents/st17301.jpg",
+    "age": 37,
+    "name": {
+      "first": "Mccormick",
+      "last": "Rutledge"
+    },
+    "company": "Elders Real Estate",
+    "email": "mccormick.rutledge@elders.com.au",
+    "phone": "+61 490 858 137",
+    "joined": "Monday, January 19, 2015 7:53 PM"
+  },
+  {
+    "_id": "562b4a34058eba8c0112c094",
+    "index": 12,
+    "balance": "$1,712,733",
+    "picture": "img/agents/st17302.jpg",
+    "age": 34,
+    "name": {
+      "first": "Christa",
+      "last": "Graves"
+    },
+    "company": "Elders Real Estate",
+    "email": "christa.graves@elders.com.au",
+    "phone": "+61 488 546 527",
+    "joined": "Monday, April 7, 2014 2:46 AM"
+  },
+  {
+    "_id": "562b4a3487eead442d68524d",
+    "index": 13,
+    "balance": "$1,589,144",
+    "picture": "img/agents/st17510.jpg",
+    "age": 37,
+    "name": {
+      "first": "Swanson",
+      "last": "Davis"
+    },
+    "company": "Elders Real Estate",
+    "email": "swanson.davis@elders.com.au",
+    "phone": "+61 492 254 736",
+    "joined": "Sunday, August 10, 2014 7:18 PM"
+  },
+  {
+    "_id": "562b4a34e3db59e8b16c7178",
+    "index": 14,
+    "balance": "$1,321,822",
+    "picture": "img/agents/st17517.jpg",
+    "age": 24,
+    "name": {
+      "first": "Wolfe",
+      "last": "Cunningham"
+    },
+    "company": "Elders Real Estate",
+    "email": "wolfe.cunningham@elders.com.au",
+    "phone": "+61 496 646 334",
+    "joined": "Wednesday, June 24, 2015 11:11 AM"
   }
 ]
