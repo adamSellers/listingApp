@@ -17,7 +17,7 @@
       <ion-item class="item-thumbnail-left item-text-wrap item-icon-right" 
       ng-class="{'star' : item.star}"
       ng-repeat="item in listings | filter: query" href="#/tab/list/{{ item.id }}">
-        <img ng-src="{{ item.mobileimage }}" alt="Image" />
+        <img ng-src="img/{{ item.mobileimage }}" alt="Image" />
         <h2>{{ item.street }}</h2>
         <h3>Elders Real Estate</h3>
         <h3>Bed: {{ item.beds }} | Bath: {{ item.bath }} | Parking: {{ item.parking }}</h3>

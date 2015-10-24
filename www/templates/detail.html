@@ -5,14 +5,20 @@
 
 <!-- Using the global header now --> 
 <ion-vew title="Listing Detail">
-	<ion-content class="has-subheader">
+	<ion-content>
 		<ion-list class="list-inset">
 			<ion-item class="item item-text-wrap" ng-repeat="item in listings | filter: { id: whichListing } : true">
-				<img ng-src="{{ item.mobileimage }}" alt="Image"/>
-		        <h2>{{ item.street }} {{ item.suburb }}</h2>
-		        <h3>{{ item.information }}</h3>
-		        <h3>Bed: {{ item.beds }} | Bath: {{ item.bath }} | Parking: {{ item.parking }}</h3>
-		        <h4>RPP Market Apraisal: ${{ item.marketvalue }}</h4>
+				<div class="row row-center">
+					<div class="col col-67">
+						<h2>{{ item.street }} {{ item.suburb }}</h2>
+				        <h3>{{ item.information }}</h3>
+				        <h3>Bed: {{ item.beds }} | Bath: {{ item.bath }} | Parking: {{ item.parking }}</h3>
+				        <h3>RPP Market Apraisal: ${{ item.marketvalue }}</h3>
+			        </div>
+					<div class="col">
+						<img ng-src="img/{{ item.mobileimage }}" alt="Image"/>
+					</div>
+		        </div>
 		       	<p>&nbsp;</p>
 		        <form>
 		        	<h2>Enter Sale Details:</h2>
