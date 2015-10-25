@@ -17,11 +17,11 @@
       <ion-item class="item-thumbnail-left item-text-wrap item-icon-right" 
       ng-class="{'star' : item.star}"
       ng-repeat="item in listings | filter: query" href="#/tab/list/{{ item.id }}">
-        <img ng-src="img/{{ item.mobileimage }}" alt="Image" />
-        <h2>{{ item.street }}</h2>
+        <img ng-src="img/{{ item.mobile_image__c }}" alt="Image" />
+        <h2>{{ item.street__c }}</h2>
         <h3>Elders Real Estate</h3>
-        <h3>Bed: {{ item.beds }} | Bath: {{ item.bath }} | Parking: {{ item.parking }}</h3>
-        <p>{{ item.description | limitTo: 50 }}{{ item.description.length > 50 ? '&hellip;' : ''}}</p>
+        <h3>Bed: {{ item.beds__c }} | Bath: {{ item.bath__c }} | Parking: {{ item.parking__c }}</h3>
+        <p>{{ item.description__c | limitTo: 50 }}{{ item.description__c.length > 50 ? '&hellip;' : ''}}</p>
         <!-- Reorder button functionality that is repeated in each list item -->
         <button class="button button-clear icon ion-star button-assertive"
          ng-click="toggleStar(item)" ng-show="item.star"></button>

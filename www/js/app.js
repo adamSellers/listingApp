@@ -96,10 +96,11 @@ angular.module('listings', [
 
       $scope.listings = ListingService.query();
       $scope.whichListing = $state.params.aId;
+      console.log($state.params.aId + ' was recorded');
 
      $scope.updateListing = function(listingId) {
 
-        updateService.save({id: listingId}, {price: '2000000', saledate: '10/31/2015'});
+        updateService.save({id: listingId}, {sale_price__c: '2000000', sale_date__c: '10/31/2015'});
      };
 
 
