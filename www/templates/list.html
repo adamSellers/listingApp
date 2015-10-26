@@ -1,5 +1,9 @@
 <!-- Begin --> 
-  <ion-view title="Available Listings">
+  <ion-view view-title="Available Listings">
+    <ion-nav-buttons side="secondary">
+      <button class="button button-icon ion-navicon">
+      </button>
+    </ion-nav-buttons>
 
   <!-- **Subheader Starts here --> 
   <div class="bar bar-subheader item-input-inset bar-light">
@@ -16,7 +20,7 @@
     <ion-list> <!-- took these out of here show-reorder="data.showReorder" show-delete="data.showEdit" -->
       <ion-item class="item-thumbnail-left item-text-wrap item-icon-right" 
       ng-class="{'star' : item.star}"
-      ng-repeat="item in listings | filter: query" href="#/tab/list/{{ item.id }}">
+      ng-repeat="item in listings | filter: query" href="#/tab/list/{{ item.street__c }}">
         <img ng-src="img/{{ item.mobile_image__c }}" alt="Image" />
         <h2>{{ item.street__c }}</h2>
         <h3>Elders Real Estate</h3>

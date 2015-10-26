@@ -1,16 +1,16 @@
-<!--<ion-header-bar class="bar-assertive">
-	<ion-nav-back-button></ion-nav-back-button>
-	<h2 class="title">Listing Detail</h2>
-</ion-header-bar> -->
+
 
 <!-- Using the global header now --> 
-<ion-vew title="Listing Detail">
-	<ion-content>
+<ion-vew view-title="Listing Detail">
+    <ion-nav-buttons side="secondary">
+      <button class="button button-icon ion-navicon">
+      </button>
+    </ion-nav-buttons>
+	<ion-content has-header="true" padding="true">
 		<ion-list class="list-inset">
-			<ion-item class="item item-text-wrap" ng-repeat="item in listings | filter: { id: whichListing }">
+			<ion-item class="item item-text-wrap" ng-repeat="item in listings | filter: { street__c: whichListing }">
 				<div class="row row-center">
 					<div class="col col-67">
-						<h2>{{ item.id }}</h2>
 						<h2>{{ item.street__c }} {{ item.suburb__c }}</h2>
 				        <h3>{{ item.information__c }}</h3>
 				        <h3>Bed: {{ item.beds__c }} | Bath: {{ item.bath__c }} | Parking: {{ item.parking__c }}</h3>
@@ -33,7 +33,7 @@
 					  	<input type="text" ng-model="item.sale_date__c">
 					</label>
 					</div>
-					<button class="button button-full button-calm" ng-click="updateListing({{ item.id }})">
+					<button class="button button-full button-calm" ng-click="updateListing(item.id, item.sale_price__c, item.sale_date__c)">
 				    	Submit
 				  	</button>
 				</form>

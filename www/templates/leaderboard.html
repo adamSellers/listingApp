@@ -18,12 +18,13 @@
   <ion-refresher pulling-text="Pull to Refresh" on-refresh="doRefresh()"></ion-refresher>
     <ion-list class="list list-inset">
       <ion-item class="item-thumbnail-left item-text-wrap icon-right" 
-      ng-repeat="item in leaders | filter: query">
+      ng-repeat="item in leaders | orderBy: '-balance'">
         <img ng-src="{{ item.picture }}" alt="Image" />
         
         <h2>{{ item.name.first }} {{ item.name.last }}</h2>
         <h3>{{ item.balance }}</h3>
-        <p>Some stuff</p>
+        <h3>Last month's ranking: {{item.index}}</h3>
+        <h4>Give them a shout out @: {{item.email}}</h4>
         <!-- Reorder button functionality that is repeated in each list item -->
       </ion-item>
     </ion-list>

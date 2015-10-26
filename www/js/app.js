@@ -90,7 +90,7 @@ angular.module('listings', [
 })    
 
 //Controller for the listings tab
-.controller('ListController', ['$scope', '$state', '$http', 'ListingService', 'updateService',
+.controller('ListController', ['$scope', '$state', '$http', 'ListingService',
  function($scope, $state, $http, ListingService, updateService) {
 
 
@@ -98,9 +98,12 @@ angular.module('listings', [
       $scope.whichListing = $state.params.aId;
       console.log($state.params.aId + ' was recorded');
 
-     $scope.updateListing = function(listingId) {
+     $scope.updateListing = function(listingId,price,date) {
 
-        updateService.save({id: listingId}, {sale_price__c: '2000000', sale_date__c: '10/31/2015'});
+        var query = ListingService.save({id: listingId}, {sale_price__c: price, sale_date__c: date});
+        query.$promise.then(function(){
+          console.log('that was successful');
+        })
      };
 
 
