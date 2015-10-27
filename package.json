@@ -17,5 +17,8 @@
   "cordovaPlugins": [],
   "cordovaPlatforms": [
     "ios"
-  ]
+  ],
+  "scripts": {
+    "start": "./www/index.html"
+  }
 }
