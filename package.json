@@ -17,8 +17,5 @@
   "cordovaPlugins": [],
   "cordovaPlatforms": [
     "ios"
-  ],
-  "scripts": {
-    "start": "#/www/tab/home"
-  }
+  ]
 }
