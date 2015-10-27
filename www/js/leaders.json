@@ -63,14 +63,14 @@
     "_id": "562b4a34265b6493f344da6d",
     "index": 4,
     "balance": "$3,901,035",
-    "picture": "img/agents/st15531.jpg",
+    "picture": "img/agents/jane.jpg",
     "age": 28,
     "name": {
-      "first": "Howard",
-      "last": "Roth"
+      "first": "Jane",
+      "last": "Goodhall"
     },
     "company": "Elders Real Estate",
-    "email": "violet.roth@elders.com.au",
+    "email": "jane.goodhall@elders.com.au",
     "phone": "+61 482 241 639",
     "joined": "Monday, February 3, 2014 11:49 PM"
   },

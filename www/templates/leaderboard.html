@@ -24,7 +24,7 @@
         <h2>{{ item.name.first }} {{ item.name.last }}</h2>
         <h3>{{ item.balance }}</h3>
         <h3>Last month's ranking: {{item.index}}</h3>
-        <h4>Give them a shout out @: {{item.email}}</h4>
+        <h4>@:<a class="noUnderline" href="mailto:{{item.email}}"> {{item.email}}</a></h4>
         <!-- Reorder button functionality that is repeated in each list item -->
       </ion-item>
     </ion-list>
