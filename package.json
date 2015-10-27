@@ -19,6 +19,6 @@
     "ios"
   ],
   "scripts": {
-    "start": "./www/index.html"
+    "start": "#/tab/home.html"
   }
 }
