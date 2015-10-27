@@ -1,21 +1,22 @@
-
-
 <!-- Using the global header now --> 
-<ion-vew view-title="Listing Detail">
-    <ion-nav-buttons side="secondary">
-      <button class="button button-icon ion-navicon">
-      </button>
-    </ion-nav-buttons>
-	<ion-content has-header="true" padding="true">
+<ion-view view-title="Listing Detail">
+ 	<ion-content has-header="true" padding="true">
 		<ion-list class="list-inset">
-			<ion-item class="item item-text-wrap item-thumbnail-right" ng-repeat="item in listings | filter: { street__c: whichListing }">
-				<img ng-src="img/{{ item.mobile_image__c }}" alt="Image"/>
-				<h2>{{ item.street__c }} {{ item.suburb__c }}</h2>
-		        <h3>{{ item.information__c }}</h3>
-		        <h3>Bed: {{ item.beds__c }} | Bath: {{ item.bath__c }} | Parking: {{ item.parking__c }}</h3>
-		        <h3>RPP Market Apraisal: ${{ item.rpp_market_value__c }}</h3>
-		       	<p>&nbsp;</p>
-		        <form>
+			<ion-item class="item item-text-wrap" ng-repeat="item in listings | filter: { street__c: whichListing }">
+			<div class="row">
+				<div class="col">
+					<h2>{{ item.street__c }} {{ item.suburb__c }}</h2>
+			        <h3>{{ item.information__c }}</h3>
+			        <h3>Bed: {{ item.beds__c }} | Bath: {{ item.bath__c }} | Park: {{ item.parking__c }}</h3>
+			        <h3>RPP Apraisal: ${{ item.rpp_market_value__c }}</h3>
+		        </div>
+				<div class="col">
+					<img ng-src="img/{{ item.mobile_image__c }}" alt="Image"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<form>
 		        	<h2>Enter Sale Details:</h2>
 		        	<div class="list">
 		        	<label class="item item-input">
@@ -31,9 +32,11 @@
 				    	Submit
 				  	</button>
 				</form>
-				<p>&nbsp;</p>
+				</div>
+			</div>
+
 		        <p>{{ item.description__c }}</p>
 			</ion-item>
 		</ion-list>
 	</ion-content>
-</ion-vew>
+</ion-view>
