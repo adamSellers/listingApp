@@ -1,0 +1,20 @@
+{
+  "name": "Real Estate Agent App",
+  "description": "This app is for estate agents to process sales data into Salesforce",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "herokuconnect",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
